@@ -53,5 +53,10 @@ Mytodo::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-resources :todos
+  root to: 'todos#index'
+  resources :todos do
+    collection do
+      get 'search', to: 'todos#search'
+    end
+  end
 end

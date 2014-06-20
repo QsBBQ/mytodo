@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.1'
 
 gem 'bootstrap-sass'
 gem 'coffee-rails'
@@ -12,6 +12,7 @@ gem 'bootstrap_form'
 gem 'bcrypt-ruby'
 gem 'fabrication'
 gem 'faker'
+gem 'turbolinks'
 
 group :development do
   gem 'sqlite3'
@@ -24,7 +25,7 @@ group :development do
 end
 
 group :test, :development do
-  gem 'rspec-rails', '=2.99'
+  gem 'rspec-rails', '=2.14.2'
 end
 
 group :test do
